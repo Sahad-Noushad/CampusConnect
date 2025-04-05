@@ -35,9 +35,9 @@
             $mail->Host = "smtp.gmail.com";
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
-            $mail->Username = "campusconnectproject@gmail.com";
-            $mail->Password = "gwpqskqtjvsptgcm";
-            $mail->setFrom("campusconnectproject@gmail.com", "Campusconnect");
+            $mail->Username = "Your_email";
+            $mail->Password = "Smtp password";
+            $mail->setFrom("Mail_address", "Name");
             $mail->addAddress($send_to);
             $mail->Subject = "Registration Confirmed";
             $mail->Body = "Hello,\nYour registration has been successfully verified, and you can now login :).";
