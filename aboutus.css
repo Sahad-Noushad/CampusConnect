@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.back{
+    width: 100%;
+    height: 100vh;
+}
+
+.top{
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(image/about.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 98%;
+    margin-left: 1%;
+    padding: 35px 0;
+    position: sticky;
+    top: 10px;
+    border-bottom: 1px solid #3aafa9;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.logo{
+    width: 200px;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+
+.title p{
+    color: rgba(255, 255, 255, 0.779);
+    position: absolute;
+    top: 33%;
+    left: 34%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 80px;
+    letter-spacing: 1px;
+}
+
+
+.text p{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact{
+    padding-top: 30px;
+    height: 20vh;
+}
+
+.contact h1{
+    position: absolute;
+    left: 40%;
+    color: white;
+}
+
+.mail{
+    padding-top: 55px;
+    padding-left: 37%;
+}
+
+.mail i{
+    color: white;
+}
+
+.mail a{
+    color: white;
+    text-decoration: none;
+}

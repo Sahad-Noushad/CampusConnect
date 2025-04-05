@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+        <script src="login.js"></script>
+        <title>Login</title>
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="image-container">
+                <div class="image">
+                    <div class="image-panel image-right">
+                        <h1>CampusConnect</h1>
+                        <p>"Unlock Your Potential, Stay Informed with CampusConnect"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-container">
+                <form action="login.php" method="post">
+                    <h1>Login</h1>
+                    <input type="text" id="Id" name="idno" placeholder="Id/Register Number" required>
+                    <input type="password" id="Password" name="password" placeholder="Password" required>
+                    <i class="far fa-eye-slash" id="togglePass" onclick="toggle()"></i>
+                    <span class="button">
+                        <input type="submit" value="Log in" name="submit">
+                    </span>
+                </form>
+                <button onclick="location.href='index.html'">Home</button>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+*{
+    font-family: 'Montserrat',sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.back{
+    width: 100%;
+    height: 90vh;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav{
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #3aafa9;
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav ul li a i{
+    padding-right: 5px;
+}
+
+.nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999;
+    
+}
+.nav ul li a:hover{
+    color: #3aafa9;
+}
+
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #3aafa9;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition-duration: 0.5s;
+}
+
+.nav ul li:hover::after{
+    width: 100%;
+}
+
+.nav p{
+    text-transform: uppercase;
+    color: #999;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+table{
+    border: 1px solid #999;
+    color: white;
+    margin: 0 auto;;
+    border-radius: 5px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+th{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid #999;
+    text-align: center;
+    padding: 3px 15px;
+    border-radius: 5px;
+}
+
+td{
+    border: 1px solid #999;
+    text-align: center;
+    padding: 3px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+input{
+    background-color: white;
+    border: none;
+    margin: 8px 8px;
+    width: 25%;
+    padding: 12px 10px;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+}
+
+#day{
+    width: 10%;
+}
+
+input:hover{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+.button input{
+    border-radius: 7px;
+    width: 10%;
+    margin: 0;
+    border: 1px solid #17252a;
+    background-color: #17252a;
+    color: #feffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 80ms ease-in;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.button input:hover{
+    background-color: #feffff;
+    font-weight: bold;
+    color: #17252a;
+    box-shadow: 8px 0px 10px rgba(0, 0, 0, 0.126);
+}
+
+select{
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+select option{
+    color: black;
+}
+
+select:required:invalid{
+    color: #999;
+}
+
+form{
+    margin-left: 15%;
+    margin-top: 2%;
+}
+

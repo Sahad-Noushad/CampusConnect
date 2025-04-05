@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+*{
+    font-family: 'Montserrat',sans-serif;
+}
+
+body{
+    background-image: url(../../../image/notebg2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border-bottom: 2px solid #999;
+    backdrop-filter: blur(24px);
+}
+
+.nav p{
+    color: #999;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-right: 40px;
+}
+
+.nav ul{
+    width: 50%;
+    position: absolute;
+    left: 0;
+}
+
+.nav ul li{
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition-duration: 0.5s;
+}
+
+.nav ul li a:hover{
+    letter-spacing: 5px;
+}
+
+.nav ul li a i{
+    margin-right: 4px;
+}
+
+
+.main{
+    width: 500px;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(225, 225, 225, 0.505);
+    backdrop-filter: blur(20px);
+    top: 20px;
+    border-radius: 20px;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.btn{
+    border: 1px solid white;
+    height: 60px;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.private,.public{
+    font-size: 22px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.slider{
+    height: 60px;
+    width: 150px;
+    border-radius: 50px;
+    position: absolute;
+    top: 21px;
+    left: 100px;
+    transition: all 0.5s ease-in-out;
+    background-color: white;
+}
+
+.moveslider {
+    left: 250px;
+}
+
+.pnote{
+    background-color: rgba(225, 225, 225, 0.505);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    width: 500px;
+    height: 80vh;
+    position: relative;
+    top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1px;
+    align-items: center;
+}
+
+.pdf{
+    width: 90%;
+    height: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+.pdf:hover{
+    color: black;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+
+.form-sec{
+    height: 500px;
+    width: 1000px;
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    left: 0px;
+}
+.form-sec-move {
+    left: -500px;
+}
+
+.pub,.pri{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.pub{
+    gap: 50px;
+}
+
+.pri{
+    gap: 30px;
+}
+
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pri .button input{
+    margin-left: 50px;
+}
+
+form select{
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    transition-duration: 0.5s;
+}
+
+form select:hover{
+    cursor: pointer;
+    border-bottom: none;
+    letter-spacing: 2px;
+}
+.button{
+    width: 100%;
+}
+
+.button input{
+    width: 70%;
+    height: 40px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 68px;
+    transition-duration: 0.5s;
+}
+
+.button input:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    letter-spacing: 3px;
+}
+
+
+
+.file input{
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}

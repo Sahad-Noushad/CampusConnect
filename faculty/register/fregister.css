@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #2b7a78;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat',sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
+}
+
+h1{
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #17252a;
+    text-transform: uppercase;
+}
+
+.button input{
+    border-radius: 7px;
+    border: 1px solid #17252a;
+    background-color: #17252a;
+    color: #feffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 45px;
+    transition: transform 80ms ease-in;
+    transition-duration: .5s;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.button input:hover{
+    background-color: #feffff;
+    font-weight: bold;
+    color: #17252a;
+    box-shadow: 8px 0px 10px rgba(0, 0, 0, 0.126);
+}
+
+form{
+    background-color: #def2f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    padding: 0 50px;
+}
+
+input {
+    background-color: white;
+    border: none;
+    margin: 8px 0;
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 7px;
+    transition-duration: 0.5s;
+}
+select{
+    background-color: white;
+    border: none;
+    margin: 8px 0;
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 7px;
+    transition-duration: 0.5s;
+}
+select:hover{
+    box-shadow: 8px 0px 10px rgba(0, 0, 0, 0.126);
+}
+
+select:required:invalid{
+    color: rgba(0, 0, 0, 0.600);
+}
+
+input:hover{
+    box-shadow: 8px 0px 10px rgba(0, 0, 0, 0.126);
+}
+
+.container{
+    background-color: #3aafa9;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 550px;
+    height: 600px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.form-container{
+    position: static;
+    height: 100%;
+}
+
+i{
+    position: absolute;
+    right: 11%;
+    bottom: 28%;
+    color: #18716d;
+    cursor: pointer;
+}
+

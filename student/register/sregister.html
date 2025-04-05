@@ -1,0 +1,45 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="sregister.css">
+        <script src="sregister.js"></script>
+        <title>Student Register</title>
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="form-container">
+                <form action="sregister.php" method="post">
+                    <h1>Student registration</h1>
+                    <input type="text" id="name" name="name" placeholder="Name" pattern="[A-Za-z ]+" title="Please enter only characters" required>
+                    <input type="text" id="rno" name="regno" placeholder="Register Number" pattern="[0-9]+" title="Please enter only numbers" required >
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <select name="gen" id="gen" required>
+                        <option value="" disabled selected hidden>Gender</option>
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                    </select>
+                    <select name="year" id="year" required>
+                        <option value="" disabled selected hidden>Year</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                    <select name="course" id="course" required>
+                        <option value="" disabled selected hidden >Course</option>
+                        <option value="cs" >B.Sc. Computer Science</option>
+                        <option value="ele">B.Sc. Electronics</option>
+                        <option value="math">B.Sc. Mathematics</option>
+                        <option value="imb">B.Sc. Biochemistry & Idustrial Microbiology</option>
+                        <option value="bcom">B.Com with Computer Application</option>
+                        <option value="english">B.A.English and Media Studies</option>
+                    </select>
+                    <input required type="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                    <i class="far fa-eye-slash" id="togglePass" onclick="toggle()" ></i>
+                    <input type="password" id="cpassword" name="password" placeholder="Confirm Password" required>
+                    <span class="button">
+                        <input type="submit" value="Register" name="submit" onclick="validatepass()" >
+                    </span>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

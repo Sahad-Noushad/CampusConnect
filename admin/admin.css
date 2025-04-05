@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+*{
+    font-family: 'Montserrat',sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.back{
+    width: 100%;
+    height: 90vh;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+    cursor: pointer;
+    width: 170px;
+}
+
+.nav{
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #3aafa9;
+}
+
+.nav img{
+    margin-left: 10px;
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999;
+    
+}
+.nav ul li a:hover{
+    color: #3aafa9;
+}
+
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #3aafa9;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition-duration: 0.5s;
+}
+
+.nav ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.op{
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+    height: 35vh;
+    padding-top: 120px;
+    justify-content: space-between;
+}
+
+.profile{
+    border-radius: 10px;
+    background-color: #fd5e0a;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.profile:hover{
+    transform: scale(1.1);
+}
+
+.profile img{
+    width: 300px;
+    position: relative;
+    right: 5px;
+    transition-duration: 0.5s;
+}
+
+.profile img:hover{
+    transform: scale(1.1);
+}
+
+.profile button{
+    position: relative;
+    bottom: 30%;
+    left: 12px;
+    width: 90%;
+    height: 40px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(to left, transparent 50%, white 50%);
+    transition: background-position 0.5s;
+    background-position: right;
+    background-size: 200%;
+}
+
+.profile button:hover{
+    background-position: left;
+    color: black;
+}
+
+.profile button i{
+    padding-left: 100px;
+}
+
+.notes{
+    border-radius: 10px;
+    background-color: black;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.notes:hover{
+    transform: scale(1.1);
+}
+
+.notes img{
+    width: 500px;
+    position: relative;
+    right: 80px;
+    opacity: 0.80;
+    transition-duration: 0.5s;
+}
+
+.notes img:hover{
+    transform: scale(1.1);
+}
+
+.notes button{
+    position: relative;
+    bottom: 42%;
+    left: 13px;
+    width: 90%;
+    height: 40px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(to left, transparent 50%, white 50%);
+    transition: background-position 0.5s;
+    background-position: right;
+    background-size: 200%;
+}
+
+.notes button:hover{
+    background-position: left;
+    color: black;
+}
+
+.notes button i{
+    padding-left: 130px;
+}
+
+.query{
+    border-radius: 10px;
+    background-color: black;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.query:hover{
+    transform: scale(1.1);
+}
+
+.query img{
+    width: 500px;
+    position: relative;
+    right: 80px;
+    opacity: 0.80;
+    transition-duration: 0.5s;
+}
+
+.query img:hover{
+    transform: scale(1.1);
+}
+
+.query button{
+    position: relative;
+    bottom: 42%;
+    left: 15px;
+    width: 90%;
+    height: 40px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(to left, transparent 50%, white 50%);
+    transition: background-position 0.5s;
+    background-position: right;
+    background-size: 200%;
+}
+
+.query button:hover{
+    background-position: left;
+    color: black;
+}
+
+.query button i{
+    padding-left: 130px;
+}
+
+.calender{
+    border-radius: 10px;
+    background-color: black;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.calender:hover{
+    transform: scale(1.1);
+}
+
+.calender img{
+    width: 400px;
+    position: relative;
+    right: 80px;
+    opacity: 0.80;
+    transition-duration: 0.5s;
+}
+
+.calender img:hover{
+    transform: scale(1.1);
+}
+
+.calender button{
+    position: relative;
+    bottom: 66%;
+    left: 1px;
+    width: 90%;
+    height: 40px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(to left, transparent 50%, white 50%);
+    transition: background-position 0.5s;
+    background-position: right;
+    background-size: 200%;
+}
+
+.calender button:hover{
+    background-position: left;
+    color: black;
+}
+
+.calender button i{
+    padding-left: 80px;
+}
