@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="fregister.css">
+        <script src="fregister.js"></script>
+        <title>Faculty Register</title>
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="form-container">
+                <form action="fregister.php" method="post">
+                    <h1>Faculty registration</h1>
+                    <input type="text" name="name" id="name" placeholder="Name" pattern="[A-Za-z ]+" title="Please enter only characters" required>
+                    <input type="text" name="idno" id="id" placeholder="Id Number" pattern="[0-9]+" title="Please enter only numbers" required>
+                    <input type="text" name="phoneno" id="Phone" placeholder="Phone Number" pattern="[0-9]{10}" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <select name="dept" id="dept" required>
+                        <option value="" id="1" disabled selected hidden >Department</option>
+                        <option value="cs" >Computer Science</option>
+                        <option value="ele">Electronics</option>
+                        <option value="math">Mathematics</option>
+                        <option value="imb">Biochemistry & Idustrial Microbiology</option>
+                        <option value="bcom">Commerce with Computer Application</option>
+                        <option value="english">English and Media Studies</option>
+                    </select>
+                    <input required type="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                    <i class="far fa-eye-slash" id="togglePass" onclick="toggle()" ></i>
+                    <input type="password" name="password" id="cpassword" placeholder="Confirm Password" required>
+                    <span class="button">
+                        <input type="submit" value="register" name="submit" onclick="validatepass()">
+                    </span>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

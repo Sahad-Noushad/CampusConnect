@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+*{
+    font-family: 'Montserrat',sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.back{
+    width: 100%;
+    height: 90vh;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav{
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #3aafa9;
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav ul li a i{
+    padding-right: 5px;
+}
+
+.nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999;
+    
+}
+.nav ul li a:hover{
+    color: #3aafa9;
+}
+
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #3aafa9;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition-duration: 0.5s;
+}
+
+.nav ul li:hover::after{
+    width: 100%;
+}
+
+.nav p{
+    text-transform: uppercase;
+    color: #999;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80vh;
+}
+
+.content p{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content i{
+    margin-right: 20px;
+}
+
+.ver{
+    margin-top: 5%;
+    background-color: black;
+    border-radius: 30px;
+    border: 1px solid #999;
+    width: 60%;
+    height: 10%;
+    transition-duration: 0.5s;
+}
+
+.ver:hover{
+    transform: scale(1.1);
+}
+
+
+
+.delete{
+    background-color: black;
+    border-radius: 30px;
+    border: 1px solid #999;
+    width: 60%;
+    height: 10%;
+    transition-duration: 0.5s;
+}
+
+.delete:hover{
+    transform: scale(1.1);
+}
+
+.atten{
+    background-color: black;
+    border-radius: 30px;
+    border: 1px solid #999;
+    width: 60%;
+    height: 10%;
+    transition-duration: 0.5s;
+}
+
+.atten:hover{
+    transform: scale(1.1);
+}
+
+.list{
+    background-color: black;
+    border-radius: 30px;
+    border: 1px solid #999;
+    width: 60%;
+    height: 10%;
+    transition-duration: 0.5s;
+}
+
+.list:hover{
+    transform: scale(1.1);
+}
+
+.upload{
+    background-color: black;
+    border-radius: 30px;
+    border: 1px solid #999;
+    width: 60%;
+    height: 10%;
+    transition-duration: 0.5s;
+}
+
+.upload:hover{
+    transform: scale(1.1);
+}

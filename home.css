@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+*{
+    font-family: 'Montserrat',sans-serif;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-color: black;
+}
+
+
+
+.back{
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+    cursor: pointer;
+    width: 170px;
+}
+
+.nav{
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #3aafa9;
+    position: sticky;
+    top: 0%;
+    background-color: black;
+    z-index: 1;
+}
+
+.nav img{
+    margin-left: 10px;
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999;
+    
+}
+.nav ul li a:hover{
+    color: #3aafa9;
+}
+
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #3aafa9;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition-duration: 0.5s;
+}
+
+.nav ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    top: 12%;
+    position: absolute;
+    justify-content: space-between;
+}
+
+.text{
+    position: relative;
+    margin-left: 50px;
+    margin-top: -10px;
+    width: 25%;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+}
+
+.up{
+    color: white;
+    font-size: 60px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #999;
+    
+}
+
+.down{
+    color: #cfcfcf;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile{
+    border-radius: 10px;
+    background-color: #fd5e0a;
+    width: 30%;
+    position: absolute;
+    top: 3%;
+    left: 63%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+
+
+.profile:hover{
+    transform: scale(1.1);
+}
+
+
+
+.profile img{
+    width: 400px;
+    position: relative;
+    left: 30px;
+    transition-duration: 0.5s;
+}
+
+.profile img:hover{
+    transform: scale(1.1);
+}
+
+.profile button{
+    position: relative;
+    bottom: 25%;
+    left: 23px;
+    width: 90%;
+    height: 40px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(to left, transparent 50%, white 50%);
+    transition: background-position 0.5s;
+    background-position: right;
+    background-size: 200%;
+    backdrop-filter: blur(20px);
+}
+
+.profile button:hover{
+    background-position: left;
+    color: black;
+}
+
+.profile button i{
+    padding-left: 250px;
+}
+
+.bottom{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 65%;
+    right: 100px;
+    width: 70%;
+    height: 40%;
+    padding: 40px 0;
+    transition-duration: 0.5s;
+}
+
+.subt{
+    color: #cfcfcf;
+    margin-left: -28%;
+    padding-top: 80px;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.notes{
+    border-radius: 10px;
+    width: 30%;
+    height: 100%; 
+    background-color: black;
+    overflow: hidden;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.notes:hover{
+    transform: scale(1.1);
+}
+
+.notes img{
+    width: 500px;
+    position: relative;
+    right: 80px;
+    opacity: 0.80;
+    transition-duration: 0.5s;
+}
+
+.notes img:hover{
+    transform: scale(1.1);
+}
+
+.notes button{
+    position: relative;
+    bottom: 25%;
+    width:90%;
+    left: 16px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to left, transparent 50%, white 50%);
+    transition: background-position 0.5s;
+    background-position: right;
+    backdrop-filter: blur(20px);
+    background-size: 200%;
+}
+
+.notes button:hover{
+    background-position: left;
+    color: black;   
+}
+
+.notes button i{
+    padding-left: 180px;
+}
+
+.query{
+    border-radius: 10px;
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    cursor: pointer;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+.query:hover{
+    transform: scale(1.1);
+}
+
+.query img{
+    width: 500px;
+    position: relative;
+    right: 60px;
+    opacity: 0.80;
+    transition-duration: 0.5s;
+}
+
+.query img:hover{
+    transform: scale(1.1);
+}
+
+.query button{
+    position: relative;
+    bottom: 25%;
+    width:90%;
+    left: 16px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to left, transparent 50%, white 50%);
+    transition: background-position 0.5s;
+    background-position: right;
+    backdrop-filter: blur(20px);
+    background-size: 200%;
+}
+
+.query button:hover{
+    background-position: left;
+    color: black;   
+}
+
+.query button i{
+    padding-left: 170px;
+}
+
+.cal{
+    border-radius: 10px;
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    cursor: pointer;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+.cal:hover{
+    transform: scale(1.1);
+}
+
+.cal img{
+    width: 350px;
+    position: relative;
+    opacity: 0.80;
+    transition-duration: 0.5s;
+}
+
+.cal img:hover{
+    transform: scale(1.1);
+}
+
+.cal button{
+    position: relative;
+    width: 90%;
+    bottom: 30%;
+    left: 16px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to left, transparent 50%, white 50%);
+    transition: background-position 0.5s;
+    background-position: right;
+    backdrop-filter: blur(20px);
+    background-size: 200%;
+}
+
+.cal button:hover{
+    background-position: left;
+    color: black;
+}
+
+.cal button i{
+    padding-left: 130px;
+}

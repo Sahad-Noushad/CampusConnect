@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.back{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),url(image/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 170px;
+    margin-left: -10%;
+}
+
+.navbar ul{
+    margin-right: -10%;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999;
+    
+}
+.navbar ul li a:hover{
+    color: #3aafa9;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #3aafa9;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition-duration: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.title{
+    font-size: 60px;
+    line-height: 100px;
+    font-weight: bold;
+    height: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.first{
+    border-radius: 20px;
+    border: 2px solid #3aafa9;
+    background: linear-gradient(to right, transparent 50%, #3aafa9 50%);
+    background-size: 200%;
+    background-position: left;
+    color: #feffff;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 45px;
+    transition: background-position 0.5s;
+    margin: 10px 0;
+}
+.first:hover{
+    background-position: right;
+    font-weight: bold;
+    color: #17252a;
+}
+
+.second{
+    border-radius: 20px;
+    border: 2px solid #3aafa9;
+    background: linear-gradient(to left, transparent 50%, #3aafa9 50%);
+    background-size: 200%;
+    background-position: right;
+    color: #feffff;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 45px;
+    transition: background-position 0.5s;
+    margin: 10px 0;
+}
+.second:hover{
+    background-position: left;
+    font-weight: bold;
+    color: #17252a;
+}
+
+.slider{
+    color: #3aafa9;
+    box-sizing: border-box;
+    margin-left: 12px;
+    animation: slider 3s linear infinite;
+}
+
+@keyframes slider {
+    0%{margin-top: -200px;}
+    10%{margin-top: -90px;}
+    40%{margin-top: -90px;}
+    60%{margin-top: 110px;}
+    90%{margin-top: 110px;}
+    100%{margin-top: 200px;}
+}
